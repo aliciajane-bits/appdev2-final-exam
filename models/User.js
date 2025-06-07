@@ -9,9 +9,7 @@ const userSchema = mongoose.Schema(
         email: {
             type: String,
             required: [true, 'Email is required'],
-            unique: true,
-            lowercase: true, // optional: ensures consistent format
-            trim: true
+            unique: true
         },
         password: {
             type: String,
